@@ -1,0 +1,47 @@
+<main>
+                <header>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href=@{IndexR}>
+                                    Inicio 
+
+                            <li>
+                                <a href=@{LivrosR}>
+                                    Livros 
+
+                            <li>
+                                <a href=@{RegisterR}>
+                                    Adicionar Livros 
+
+                <form>
+                    <div class="title">
+                        <h1>
+                            Adicionar um Livro
+                    <div class="flex">
+                        <label>
+                            Nome do Livro:
+
+                        <input type="text" placeholder="insira o nome do livro">
+
+                    <div class="flex">
+                        <label>
+                            Categoria do Livro:
+
+                        <input type="text" placeholder="insira a categoria do livro">
+
+                    <div class="flex">
+                        <label>
+                            Autor do Livro:
+
+                        <input type="text" placeholder="insira o autor do livro">
+
+                    <div class="flexbutton">
+                        <button type="submit">
+                            Adicionar
+
+                    
+
+
+                                
+                                                            

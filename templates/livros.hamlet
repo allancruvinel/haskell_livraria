@@ -1,0 +1,78 @@
+<main>
+                <header>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href=@{IndexR}>
+                                    Inicio 
+
+                            <li>
+                                <a href=@{LivrosR}>
+                                    Livros 
+
+                            <li>
+                                <a href=@{RegisterR}>
+                                    Adicionar Livros 
+
+                <div class="title">
+                    <h1>
+                        Listagem de Livros
+
+                <div class="flex">
+                    <div class="flexRow">
+                        <div class="flexContent">
+                            <p>
+                                Categoria
+                        <div class="flexContent">
+                            <p>
+                                Livro
+                        <div class="flexContent">
+                            <p>
+                                Autor
+                        <div class="flexContent">
+                            <p>
+                                Detalhe
+
+                    <div class="flexRow">
+                        <div class="flexContent">
+                            <p>
+                                Terror
+                        <div class="flexContent">
+                            <p>
+                                Minha VIda na ModalGR
+                        <div class="flexContent">
+                            <p>
+                                Jonatas Santos
+                        <div class="flexContent">
+                            <p>
+                                Editar
+
+                    <div class="flexRow">
+                        <div class="flexContent">
+                            <p>
+                                Aventura
+                        <div class="flexContent">
+                            <p>
+                                Harry Potter
+                        <div class="flexContent">
+                            <p>
+                                Joana
+                        <div class="flexContent">
+                            <p>
+                                Editar
+
+                    <div class="flexRow">
+                        <div class="flexContent">
+                            <p>
+                                Fantasia
+                        <div class="flexContent">
+                            <p>
+                                Annie White
+                        <div class="flexContent">
+                            <p>
+                                Sheron Daysy
+                        <div class="flexContent">
+                            <p>
+                                Editar
+                                
+                                                            

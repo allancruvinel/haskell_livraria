@@ -1,0 +1,20 @@
+<main>
+                <header>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href=@{IndexR}>
+                                    Inicio 
+
+                            <li>
+                                <a href=@{LivrosR}>
+                                    Livros 
+
+                            <li>
+                                <a href=@{RegisterR}>
+                                    Adicionar Livros 
+                <div class="title">
+                    <h1>
+                        Bem-Vindo ao <br/> Sistema de Livraria
+                            
+                          
