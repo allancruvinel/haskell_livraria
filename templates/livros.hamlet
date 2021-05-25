@@ -33,46 +33,20 @@
                             <p>
                                 Detalhe
 
+                $forall Entity cid livro <- livros
                     <div class="flexRow">
                         <div class="flexContent">
                             <p>
-                                Terror
+                                #{livrosCategoria livro}
                         <div class="flexContent">
                             <p>
-                                Minha VIda na ModalGR
+                                <a href=@{PerfilR cid}>
+                                    #{livrosNome livro}
                         <div class="flexContent">
                             <p>
-                                Jonatas Santos
+                                #{livrosAutor livro}
                         <div class="flexContent">
-                            <p>
-                                Editar
-
-                    <div class="flexRow">
-                        <div class="flexContent">
-                            <p>
-                                Aventura
-                        <div class="flexContent">
-                            <p>
-                                Harry Potter
-                        <div class="flexContent">
-                            <p>
-                                Joana
-                        <div class="flexContent">
-                            <p>
-                                Editar
-
-                    <div class="flexRow">
-                        <div class="flexContent">
-                            <p>
-                                Fantasia
-                        <div class="flexContent">
-                            <p>
-                                Annie White
-                        <div class="flexContent">
-                            <p>
-                                Sheron Daysy
-                        <div class="flexContent">
-                            <p>
-                                Editar
+                            <form method=post action=@{ApagarLivroR cid}>
+                                <input type="submit" value="X">
                                 
                                                             
