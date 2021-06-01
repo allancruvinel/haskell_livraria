@@ -11,6 +11,7 @@ import Text.Lucius
 
 getLivrosR :: Handler Html
 getLivrosR = do
+    usuario <- lookupSession "_ID"
     livros <- runDB $ selectList [] [Asc LivrosNome]
     defaultLayout $ do
         toWidgetHead $(luciusFile "templates/livros-css.lucius")

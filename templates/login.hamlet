@@ -23,9 +23,16 @@
                                 <li>
                                     <a href=@{UsuarioR}>
                                         Cadastrar
+                $maybe mensa <- msg
+                    <div>
+                        ^{mensa}
+                        
+                <form method=post action=@{AutR}>
+                    ^{widget}
+                    <input type="submit" value="Log In">
 
-                <div class="title">
-                    <h1>
-                        Bem-Vindo ao <br/> Sistema de Livraria
-                            
-                          
+                    
+
+
+                                
+                                                            

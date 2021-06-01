@@ -5,14 +5,24 @@
                             <li>
                                 <a href=@{IndexR}>
                                     Inicio 
-
-                            <li>
-                                <a href=@{LivrosR}>
-                                    Livros 
-
-                            <li>
-                                <a href=@{RegisterR}>
-                                    Adicionar Livros 
+                            $maybe email <- usuario
+                                <li>
+                                    <a href=@{LivrosR}>
+                                        Livros 
+                                <li>
+                                    <a href=@{RegisterR}>
+                                        Adicionar Livros 
+                                <li>
+                                    <form action=@{SairR} method=post>
+                                        <input type="submit" Sair #{email}>
+                                            Sair de #{email}
+                            $nothing
+                                <li>
+                                    <a href=@{AutR}>
+                                        Login
+                                <li>
+                                    <a href=@{UsuarioR}>
+                                        Cadastrar
 
                 <div class="title">
                     <h1>
@@ -31,7 +41,10 @@
                                 Autor
                         <div class="flexContent">
                             <p>
-                                Detalhe
+                                Excluir
+                        <div class="flexContent">
+                            <p>
+                                Atualizar
 
                 $forall Entity cid livro <- livros
                     <div class="flexRow">
@@ -41,12 +54,16 @@
                         <div class="flexContent">
                             <p>
                                 <a href=@{PerfilR cid}>
-                                    #{livrosNome livro}
+                                    #{livrosNome livro} 
                         <div class="flexContent">
                             <p>
                                 #{livrosAutor livro}
                         <div class="flexContent">
                             <form method=post action=@{ApagarLivroR cid}>
                                 <input type="submit" value="X">
+                        <div class="flexContent">
+                            <p>
+                                <a href=@{EditarLivR cid}>
+                                    Editar
                                 
                                                             

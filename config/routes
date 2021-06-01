@@ -8,3 +8,11 @@
 /register RegisterR GET POST
 /livros/#LivrosId PerfilR GET
 /livros/apagar/#LivrosId ApagarLivroR POST
+
+/livros/editar/#LivrosId EditarLivR GET POST
+
+/usuario UsuarioR GET POST
+/login AutR GET POST
+/logout SairR POST
+
+/admin AdminR GET

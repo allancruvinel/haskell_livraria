@@ -94,9 +94,3 @@ input {
     padding-left: 15px;
     margin-top: 5px;
 }
-
-button {
-    width: 30%;
-    height: 40px;
-    cursor: pointer;
-}

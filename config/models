@@ -4,4 +4,10 @@ Livros
     categoria Text
     deriving Show
 
+Usuario
+    email Text
+    senha Text
+    UniqueEmail email
+    deriving Show
+
  -- By default this file is used in Model.hs (which is imported by Foundation.hs)

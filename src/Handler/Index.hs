@@ -14,5 +14,6 @@ import Text.Lucius
 getIndexR :: Handler Html
 getIndexR = do
     defaultLayout $ do
+        usuario <- lookupSession "_ID"
         toWidgetHead $(luciusFile "templates/index-css.lucius")
         $(whamletFile "templates/index.hamlet")
