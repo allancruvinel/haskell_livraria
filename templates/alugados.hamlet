@@ -29,13 +29,9 @@
 
                 <div class="title">
                     <h1>
-                        Listagem de Livros
-
+                        Locacoes DE #{usuarioEmail usuarioloca}
                 <div class="flex">
                     <div class="flexRow">
-                        <div class="flexContent">
-                            <p>
-                                Categoria
                         <div class="flexContent">
                             <p>
                                 Livro
@@ -44,29 +40,30 @@
                                 Autor
                         <div class="flexContent">
                             <p>
-                                Excluir
+                                Categoria
                         <div class="flexContent">
                             <p>
-                                Atualizar
+                                Dia da locação
+                        <div class="flexContent">
+                            <p>
+                                Devolver
 
-                $forall Entity cid livro <- livros
+                $forall (Entity _ livro, Entity cid aluga, Entity _ _) <- tudo
                     <div class="flexRow">
+                        <div class="flexContent">
+                            <p>
+                                #{livrosNome livro}
+                        <div class="flexContent">
+                            <p>
+                                #{livrosAutor livro} 
                         <div class="flexContent">
                             <p>
                                 #{livrosCategoria livro}
                         <div class="flexContent">
                             <p>
-                                <a href=@{PerfilR cid}>
-                                    #{livrosNome livro} 
+                                #{show $ locacaoDia aluga}
                         <div class="flexContent">
-                            <p>
-                                #{livrosAutor livro}
-                        <div class="flexContent">
-                            <form method=post action=@{ApagarLivroR cid}>
-                                <input type="submit" value="X">
-                        <div class="flexContent">
-                            <p>
-                                <a href=@{EditarLivR cid}>
-                                    Editar
+                            <form method=post action=@{ApagarLocacaoR cid}>
+                                <input type="submit" value="Devolver">
                                 
                                                             

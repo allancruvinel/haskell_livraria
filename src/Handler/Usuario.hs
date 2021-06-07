@@ -54,3 +54,12 @@ postUsuarioR = do
                         |] 
                     redirect UsuarioR   
         _ -> redirect LivrosR
+
+
+getUsuariosR :: Handler Html
+getUsuariosR = do
+    usuario <- lookupSession "_ID"
+    usuarios <- runDB $ selectList [] [Asc UsuarioEmail]
+    defaultLayout $ do
+        toWidgetHead $(luciusFile "templates/livros-css.lucius")
+        $(whamletFile "templates/usuarios.hamlet")

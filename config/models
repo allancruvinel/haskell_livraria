@@ -4,6 +4,12 @@ Livros
     categoria Text
     deriving Show
 
+Locacao
+    userid UsuarioId
+    livid LivrosId
+    dia Day
+    qt Int
+
 Usuario
     email Text
     senha Text

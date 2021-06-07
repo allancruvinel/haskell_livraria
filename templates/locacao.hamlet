@@ -1,0 +1,42 @@
+<main>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href=@{IndexR}>
+                        Inicio 
+                $maybe email <- usuario
+                    <li>
+                        <a href=@{LivrosR}>
+                            Livros
+                    <li>
+                        <a href=@{UsuariosR}>
+                            Listar Usuarios
+                    <li>
+                        <a href=@{RegisterR}>
+                            Adicionar Livros 
+                    <li>
+                        <form action=@{SairR} method=post>
+                            <input type="submit" Sair #{email}>
+                                Sair de #{email}
+                $nothing
+                    <li>
+                        <a href=@{AutR}>
+                            Login
+                    <li>
+                        <a href=@{UsuarioR}>
+                            Cadastrar
+
+    <div class="title">
+        Escolha um Livro para Alugar a este usuario
+    $maybe mensa <- msg
+        <div>
+            ^{mensa}
+        <h1>
+            Cadastro de Locacao
+    <form method=post action=@{LocacaoR cid}>
+        ^{widget}
+        <input type="submit" value="Alugar">
+                        
+                                
+                                                            

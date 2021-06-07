@@ -5,14 +5,12 @@
                             <li>
                                 <a href=@{IndexR}>
                                     Inicio 
-
                             <li>
-                                <a href=@{LivrosR}>
-                                    Livros 
-
+                                <a href=@{AutR}>
+                                    Login
                             <li>
-                                <a href=@{RegisterR}>
-                                    Adicionar Livros 
+                                <a href=@{UsuarioR}>
+                                    Cadastrar
                 $maybe mensa <- msg
                     <div>
                         ^{mensa}

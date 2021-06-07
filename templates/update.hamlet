@@ -5,7 +5,9 @@
                             <li>
                                 <a href=@{IndexR}>
                                     Inicio 
-
+                            <li>
+                                <a href=@{UsuariosR}>
+                                    Listar Usuarios
                             <li>
                                 <a href=@{LivrosR}>
                                     Livros 

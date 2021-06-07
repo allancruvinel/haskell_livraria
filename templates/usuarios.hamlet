@@ -29,6 +29,32 @@
 
                 <div class="title">
                     <h1>
-                        Bem-Vindo ao <br/> Sistema de Livraria
-                            
-                          
+                        Listagem de Livros - Escolha um paga Alugar um livro
+
+                <div class="flex">
+                    <div class="flexRow">
+                        <div class="flexContent">
+                            <p>
+                                Usuario
+                        <div class="flexContent">
+                            <p>
+                                Opcao 1
+                        <div class="flexContent">
+                            <p>
+                                Opcao 2
+                $forall Entity cid usuario <- usuarios
+                    <div class="flexRow">
+                        <div class="flexContent">
+                            <p>
+                                #{usuarioEmail usuario}
+                        <div class="flexContent">
+                            <p>
+                                <a href=@{LocacaoR cid}>
+                                    alugar para este usuario 
+                        <div class="flexContent">
+                            <p>
+                                <a href=@{AlugadosR cid}>
+                                    mostrar livros alugados 
+                        
+                                
+                                                            

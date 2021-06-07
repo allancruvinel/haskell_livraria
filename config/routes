@@ -16,3 +16,10 @@
 /logout SairR POST
 
 /admin AdminR GET
+
+/listarusuarios UsuariosR GET
+
+/apagarlocacao/#LocacaoId ApagarLocacaoR POST
+
+/locacao/#UsuarioId LocacaoR GET POST
+/locacoes/#UsuarioId AlugadosR GET
