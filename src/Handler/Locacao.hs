@@ -72,7 +72,7 @@ postApagarLocacaoR cid = do
     runDB $ delete cid
     setMessage [shamlet|
                 <div>
-                    Devolvido com sucesso
+                    Devolvido com sucesso!
             |]
     redirect UsuariosR
 
