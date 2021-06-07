@@ -46,6 +46,9 @@
                                 Dia da locação
                         <div class="flexContent">
                             <p>
+                                quantidade
+                        <div class="flexContent">
+                            <p>
                                 Devolver
 
                 $forall (Entity _ livro, Entity cid aluga, Entity _ _) <- tudo
@@ -62,6 +65,9 @@
                         <div class="flexContent">
                             <p>
                                 #{show $ locacaoDia aluga}
+                        <div class="flexContent">
+                            <p>
+                                #{locacaoQt aluga}
                         <div class="flexContent">
                             <form method=post action=@{ApagarLocacaoR cid}>
                                 <input type="submit" value="Devolver">
